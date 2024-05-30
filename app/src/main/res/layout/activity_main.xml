@@ -10,17 +10,26 @@
     android:layout_margin="15dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Istana Kerajaan di Indonesia"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Istana Kerajaan di Indonesia"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
 
     <ProgressBar
         android:id="@+id/myDataLoaderProgressBar"
